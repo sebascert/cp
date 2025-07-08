@@ -1,4 +1,21 @@
 {
+  "CF328107442": {
+    "contest_id": 2123,
+    "language": "C++17 (GCC 7-32)",
+    "page": 1,
+    "path": "codeforces/2123/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Blackboard Game",
+    "problem_url": "https://codeforces.com/contest/2123/problem/A",
+    "submission_id": "CF328107442",
+    "submission_url": "https://codeforces.com/contest/2123/submission/328107442",
+    "tags": [
+      "math",
+      "*800"
+    ],
+    "timestamp": "Jul/08/2025 08:47"
+  },
   "CF328123721": {
     "contest_id": 2123,
     "language": "C++17 (GCC 7-32)",
