@@ -32,5 +32,23 @@
       "*800"
     ],
     "timestamp": "Jul/08/2025 10:49"
+  },
+  "CF328406382": {
+    "contest_id": 2123,
+    "language": "C++17 (GCC 7-32)",
+    "page": 1,
+    "path": "codeforces/2123/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Prefix Min and Suffix Max",
+    "problem_url": "https://codeforces.com/contest/2123/problem/C",
+    "submission_id": "CF328406382",
+    "submission_url": "https://codeforces.com/contest/2123/submission/328406382",
+    "tags": [
+      "brute force",
+      "data structures",
+      "*1000"
+    ],
+    "timestamp": "Jul/10/2025 10:02"
   }
 }
