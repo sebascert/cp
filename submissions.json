@@ -50,5 +50,24 @@
       "*1000"
     ],
     "timestamp": "Jul/10/2025 10:02"
+  },
+  "CF328424193": {
+    "contest_id": 2123,
+    "language": "C++17 (GCC 7-32)",
+    "page": 1,
+    "path": "codeforces/2123/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Binary String Battle",
+    "problem_url": "https://codeforces.com/contest/2123/problem/D",
+    "submission_id": "CF328424193",
+    "submission_url": "https://codeforces.com/contest/2123/submission/328424193",
+    "tags": [
+      "constructive algorithms",
+      "games",
+      "greedy",
+      "*1200"
+    ],
+    "timestamp": "Jul/10/2025 12:21"
   }
 }
