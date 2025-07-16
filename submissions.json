@@ -147,6 +147,25 @@
     ],
     "timestamp": "Jul/14/2025 19:28"
   },
+  "CF329230994": {
+    "contest_id": 1916,
+    "language": "C++17 (GCC 7-32)",
+    "page": 1,
+    "path": "codeforces/1916/B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Two Divisors",
+    "problem_url": "https://codeforces.com/contest/1916/problem/B",
+    "submission_id": "CF329230994",
+    "submission_url": "https://codeforces.com/contest/1916/submission/329230994",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "number theory",
+      "*1000"
+    ],
+    "timestamp": "Jul/16/2025 11:55"
+  },
   "CF329364085": {
     "contest_id": 2126,
     "language": "C++17 (GCC 7-32)",

@@ -12,10 +12,11 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-11 | [D - This Is the Last Time](https://codeforces.com/contest/2126/problem/D) | [C++17 (GCC 7-32)](./codeforces/2126/D.cpp) | `greedy` `sortings` | Jul/17/2025 09:59 | 
-10 | [C - I Will Definitely Make It](https://codeforces.com/contest/2126/problem/C) | [C++17 (GCC 7-32)](./codeforces/2126/C.cpp) | `greedy` `sortings` `sortings` `sortings` `sortings` `sortings` `sortings` | Jul/17/2025 09:24 | 
-9 | [B - No Casino in the Mountains](https://codeforces.com/contest/2126/problem/B) | [C++17 (GCC 7-32)](./codeforces/2126/B.cpp) | `dp` `greedy` | Jul/17/2025 08:51 | 
-8 | [A - Only One Digit](https://codeforces.com/contest/2126/problem/A) | [C++17 (GCC 7-32)](./codeforces/2126/A.cpp) | `implementation` `math` | Jul/17/2025 08:40 | 
+12 | [D - This Is the Last Time](https://codeforces.com/contest/2126/problem/D) | [C++17 (GCC 7-32)](./codeforces/2126/D.cpp) | `greedy` `sortings` | Jul/17/2025 09:59 | 
+11 | [C - I Will Definitely Make It](https://codeforces.com/contest/2126/problem/C) | [C++17 (GCC 7-32)](./codeforces/2126/C.cpp) | `greedy` `sortings` `sortings` `sortings` `sortings` `sortings` `sortings` | Jul/17/2025 09:24 | 
+10 | [B - No Casino in the Mountains](https://codeforces.com/contest/2126/problem/B) | [C++17 (GCC 7-32)](./codeforces/2126/B.cpp) | `dp` `greedy` | Jul/17/2025 08:51 | 
+9 | [A - Only One Digit](https://codeforces.com/contest/2126/problem/A) | [C++17 (GCC 7-32)](./codeforces/2126/A.cpp) | `implementation` `math` | Jul/17/2025 08:40 | 
+8 | [B - Two Divisors](https://codeforces.com/contest/1916/problem/B) | [C++17 (GCC 7-32)](./codeforces/1916/B.cpp) | `constructive algorithms` `math` `number theory` `*1000` | Jul/16/2025 11:55 | 
 7 | [B - Sherlock and his girlfriend](https://codeforces.com/contest/776/problem/B) | [C++17 (GCC 7-32)](./codeforces/776/B.cpp) | `constructive algorithms` `number theory` `*1200` | Jul/14/2025 19:28 | 
 6 | [A - Almost Prime](https://codeforces.com/contest/26/problem/A) | [C++17 (GCC 7-32)](./codeforces/26/A.cpp) | `number theory` `*900` | Jul/14/2025 19:01 | 
 5 | [E - MEX Count](https://codeforces.com/contest/2123/problem/E) | [C++17 (GCC 7-32)](./codeforces/2123/E.cpp) | `binary search` `data structures` `greedy` `sortings` `two pointers` `*1400` | Jul/11/2025 18:38 | 
