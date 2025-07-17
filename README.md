@@ -12,8 +12,9 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-9 | [D - This Is the Last Time](https://codeforces.com/contest/2126/problem/D) | [C++17 (GCC 7-32)](./codeforces/2126/D.cpp) | `greedy` `sortings` | Jul/17/2025 09:59 | 
-8 | [C - I Will Definitely Make It](https://codeforces.com/contest/2126/problem/C) | [C++17 (GCC 7-32)](./codeforces/2126/C.cpp) | `greedy` `sortings` `sortings` `sortings` `sortings` `sortings` `sortings` | Jul/17/2025 09:24 | 
+10 | [D - This Is the Last Time](https://codeforces.com/contest/2126/problem/D) | [C++17 (GCC 7-32)](./codeforces/2126/D.cpp) | `greedy` `sortings` | Jul/17/2025 09:59 | 
+9 | [C - I Will Definitely Make It](https://codeforces.com/contest/2126/problem/C) | [C++17 (GCC 7-32)](./codeforces/2126/C.cpp) | `greedy` `sortings` `sortings` `sortings` `sortings` `sortings` `sortings` | Jul/17/2025 09:24 | 
+8 | [B - No Casino in the Mountains](https://codeforces.com/contest/2126/problem/B) | [C++17 (GCC 7-32)](./codeforces/2126/B.cpp) | `dp` `greedy` | Jul/17/2025 08:51 | 
 7 | [B - Sherlock and his girlfriend](https://codeforces.com/contest/776/problem/B) | [C++17 (GCC 7-32)](./codeforces/776/B.cpp) | `constructive algorithms` `number theory` `*1200` | Jul/14/2025 19:28 | 
 6 | [A - Almost Prime](https://codeforces.com/contest/26/problem/A) | [C++17 (GCC 7-32)](./codeforces/26/A.cpp) | `number theory` `*900` | Jul/14/2025 19:01 | 
 5 | [E - MEX Count](https://codeforces.com/contest/2123/problem/E) | [C++17 (GCC 7-32)](./codeforces/2123/E.cpp) | `binary search` `data structures` `greedy` `sortings` `two pointers` `*1400` | Jul/11/2025 18:38 | 
