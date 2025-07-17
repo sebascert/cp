@@ -146,5 +146,22 @@
       "*1200"
     ],
     "timestamp": "Jul/14/2025 19:28"
+  },
+  "CF329475653": {
+    "contest_id": 2126,
+    "language": "C++17 (GCC 7-32)",
+    "page": 1,
+    "path": "codeforces/2126/D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "This Is the Last Time",
+    "problem_url": "https://codeforces.com/contest/2126/problem/D",
+    "submission_id": "CF329475653",
+    "submission_url": "https://codeforces.com/contest/2126/submission/329475653",
+    "tags": [
+      "greedy",
+      "sortings"
+    ],
+    "timestamp": "Jul/17/2025 09:59"
   }
 }
