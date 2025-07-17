@@ -147,6 +147,23 @@
     ],
     "timestamp": "Jul/14/2025 19:28"
   },
+  "CF329364085": {
+    "contest_id": 2126,
+    "language": "C++17 (GCC 7-32)",
+    "page": 1,
+    "path": "codeforces/2126/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Only One Digit",
+    "problem_url": "https://codeforces.com/contest/2126/problem/A",
+    "submission_id": "CF329364085",
+    "submission_url": "https://codeforces.com/contest/2126/submission/329364085",
+    "tags": [
+      "implementation",
+      "math"
+    ],
+    "timestamp": "Jul/17/2025 08:40"
+  },
   "CF329385776": {
     "contest_id": 2126,
     "language": "C++17 (GCC 7-32)",
