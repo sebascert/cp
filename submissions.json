@@ -147,6 +147,28 @@
     ],
     "timestamp": "Jul/14/2025 19:28"
   },
+  "CF329434531": {
+    "contest_id": 2126,
+    "language": "C++17 (GCC 7-32)",
+    "page": 1,
+    "path": "codeforces/2126/C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "I Will Definitely Make It",
+    "problem_url": "https://codeforces.com/contest/2126/problem/C",
+    "submission_id": "CF329434531",
+    "submission_url": "https://codeforces.com/contest/2126/submission/329434531",
+    "tags": [
+      "greedy",
+      "sortings",
+      "sortings",
+      "sortings",
+      "sortings",
+      "sortings",
+      "sortings"
+    ],
+    "timestamp": "Jul/17/2025 09:24"
+  },
   "CF329475653": {
     "contest_id": 2126,
     "language": "C++17 (GCC 7-32)",
