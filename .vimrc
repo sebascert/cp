@@ -1,4 +1,5 @@
 set nu
+set relativenumber
 set autoindent
 syntax off
 
