@@ -1,3 +1,5 @@
+// g++ -std=c++17 -Wall X.cpp && ./a.out
+// -fsanitize=address,undefined
 #include <bits/stdc++.h>
 using namespace std;
 
