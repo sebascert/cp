@@ -1,5 +1,4 @@
-// g++ -std=c++17 -Wall X.cpp && ./a.out
-// -fsanitize=address,undefined
+// X=C.cpp && vim $X in && g++ -Wall -fsanitize=address,undefined $X && ./a.out <in
 #include <bits/stdc++.h>
 using namespace std;
 
