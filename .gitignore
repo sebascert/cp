@@ -1,11 +1,6 @@
-*
+*.swp
 
-!.gitignore
+/build/
 
-!.vimrc
-!.nvim_cp_profile
-
-!run.sh
-
-!clean_template.cpp
-!print_template.cpp
+/.cache
+/compile_commands.json
