@@ -1,3 +1,8 @@
+default_target := main.out
+sanitized_target := san.out
+
+target ?= $(default_target)
+
 # dirs
 lib_dir := lib
 build_dir := build
@@ -12,8 +17,8 @@ CXX := g++
 CXXSTD := c++17
 CXXFLAGS := -std=$(CXXSTD) -I$(lib_dir) -g
 CXXFLAGS += -Wall -Wextra -Wno-strict-aliasing
-ifeq ($(SANITIZER),1)
-	CXXFLAGS += -fsanitize=address,undefined -O1
+ifeq ($(target),$(sanitized_target))
+	CXXFLAGS += -O1 -fsanitize=address,undefined
 else
 	CXXFLAGS += -O2
 endif
@@ -23,28 +28,29 @@ CLANGDB := compile_commands.json
 MAKEFLAGS += --no-print-directory
 
 main := main.cpp
-target := $(build_dir)/main.out
 main_in := $(build_dir)/in.txt
 main_out := $(build_dir)/out.txt
 main_exp := $(build_dir)/exp.txt
 
+bin := $(build_dir)/$(target)
+
 # run main
-all: $(target) $(main_in) $(main_out)
+all: $(bin) $(main_in) $(main_out)
 	@./$< < $(main_in) > $(main_out)
 	@cat $(main_out)
 
-compare: $(target) $(main_in) $(main_out) $(main_exp)
+compare: $(bin) $(main_in) $(main_out) $(main_exp)
 	@./$< < $(main_in) > $(main_out)
 	@paste $(main_exp) $(main_out) | awk -F'\t' '$$1 != $$2 {printf ":%d:\n%s\n%s\n", NR, $$1, $$2}'
 
-interactive: $(target)
+interactive: $(bin)
 	@./$<
 
-debug: $(target)
+debug: $(bin)
 	@gdb $<
 
 sanitize:
-	@$(MAKE) SANITIZER=1
+	@$(MAKE) target=$(sanitized_target)
 
 test:
 
@@ -72,7 +78,7 @@ clangdb: clean-clangdb
 .PHONY: format lint clangdb
 
 # compilation
-$(target): $(main) | $(build_dir)
+$(bin): $(main) | $(build_dir)
 	@$(CXX) $(CXXFLAGS) $< -o $@
 
 $(build_dir)/%.o: $(lib_dir)/%.cpp $(headers) | $(build_dir)
