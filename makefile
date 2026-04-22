@@ -39,6 +39,10 @@ all: $(bin) $(main_in) $(main_out)
 	@./$< < $(main_in) > $(main_out)
 	@cat $(main_out)
 
+time: $(bin) $(main_in) $(main_out)
+	@/usr/bin/time -v ./$< < $(main_in) > $(main_out)
+	@cat $(main_out)
+
 compare: $(bin) $(main_in) $(main_out) $(main_exp)
 	@./$< < $(main_in) > $(main_out)
 	@paste $(main_exp) $(main_out) | awk -F'\t' '$$1 != $$2 {printf ":%d:\n%s\n%s\n", NR, $$1, $$2}'
@@ -63,7 +67,7 @@ $(main_out):
 $(main_exp):
 	@touch $(main_exp)
 
-.PHONY: all interactive debug sanitize test
+.PHONY: all time compare interactive debug sanitize test
 
 # utils
 format: $(sources) $(headers)
