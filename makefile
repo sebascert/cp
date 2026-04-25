@@ -1,4 +1,5 @@
 default_target := main.out
+debug_target := debug.out
 sanitized_target := san.out
 
 target ?= $(default_target)
@@ -17,7 +18,10 @@ CXX := g++
 CXXSTD := c++17
 CXXFLAGS := -std=$(CXXSTD) -I$(lib_dir) -g
 CXXFLAGS += -Wall -Wextra -Wno-strict-aliasing
-ifeq ($(target),$(sanitized_target))
+
+ifeq ($(target),$(debug_target))
+	CXXFLAGS += -O0 -D_GLIBCXX_DEBUG
+else ifeq ($(target),$(sanitized_target))
 	CXXFLAGS += -O1 -fsanitize=address,undefined
 else
 	CXXFLAGS += -O2
@@ -51,6 +55,9 @@ interactive: $(bin)
 	@./$<
 
 debug: $(bin)
+	@$(MAKE) target=$(debug_target) debug_run
+
+debug_run: $(bin)
 	@gdb $<
 
 sanitize:
@@ -67,7 +74,7 @@ $(main_out):
 $(main_exp):
 	@touch $(main_exp)
 
-.PHONY: all time compare interactive debug sanitize test
+.PHONY: all time compare interactive debug debug_run sanitize test
 
 # utils
 format: $(sources) $(headers)
