@@ -1,7 +1,7 @@
 #include "template.hpp"
 
 struct Segtree {
-#define mid (l + r) / 2
+#define mid ((l + r) / 2)
 #define left(u) (u + 1)
 #define right(u) (u + ((mid - l + 1) << 1))
 	struct Node {
