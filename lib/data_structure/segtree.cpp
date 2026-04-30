@@ -48,7 +48,8 @@ struct IterativeSegtree {
 		ford(i, n, 0) st[i] = st[i << 1] + st[i << 1 | 1];
 	}
 	void update(int i, lli x) {
-		st[i += n] = Node(x); // assignment query
+		i += n;
+		st[i] = Node(x); // assignment query
 		for (; i > 1; i >>= 1)
 			st[i >> 1] = st[i] + st[i ^ 1];
 	}
