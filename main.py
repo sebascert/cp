@@ -1,4 +1,4 @@
-# vim X.py && python3 X.py < in
+# vim X.py in && python3 X.py < in
 import sys
 cin = sys.stdin.readline
 cout = sys.stdout.write
