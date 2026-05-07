@@ -18,19 +18,14 @@ int dfs(int u, int p) {
 		}
 	}
 
-	art[p] += dp <= depth[p];
+	art[p] += dp >= depth[p];
 
 	return dp;
 }
 
 void articulations() {
 	fill(depth, depth + N, 0);
-	fill(art, art + N, false);
+	fill(art, art + N, 0);
 	dfs(0, n);
 	art[0]--;
-
-	fore(u, 0, n) {
-		if (art[u])
-			; // articulation
-	}
 }
