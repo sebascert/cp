@@ -3,7 +3,7 @@
 struct Segtree {
 #define mid ((l + r) / 2)
 #define left(u) (u + 1)
-#define right(u) (u + ((mid - l + 1) << 1))
+#define right(u) (u + 2 * (mid - l + 1))
 	struct Node {
 		lli s, lazy;
 		Node(lli s = 0, lli lazy = 0) : s(s), lazy(lazy) {}
