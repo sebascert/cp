@@ -1,6 +1,7 @@
 #include "template.hpp"
 
-typedef __int128_t lll;
+typedef __int128 lll;
+typedef unsigned __int128 ulll;
 
 string to_string(lll x) {
 	if (x == 0)

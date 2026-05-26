@@ -6,7 +6,7 @@ struct Segtree {
 	vi st, L, R;
 	int n, rt;
 	Segtree(int n) : st(1, NEUT), L(1, 0), R(1, 0), n(n), rt(0) {}
-	int new_node(int v, int l = 0, int r = 0) {
+	int new_node(lli v, int l = 0, int r = 0) {
 		int ks = sz(st);
 		st.pb(v);
 		L.pb(l);
