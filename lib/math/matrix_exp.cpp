@@ -8,7 +8,6 @@ Matrix iden(int n) {
 	fore(i, 0, n) r[i][i] = 1;
 	return r;
 }
-
 Matrix operator*(Matrix &a, Matrix &b) {
 	int n = sz(a), m = sz(b[0]), z = sz(a[0]);
 	Matrix r(n, vector<lli>(m));
@@ -16,7 +15,6 @@ Matrix operator*(Matrix &a, Matrix &b) {
 	    r[i][j] %= mod;
 	return r;
 }
-
 Matrix binexp(Matrix a, lli b) {
 	Matrix x = iden(sz(a));
 	while (b) {
