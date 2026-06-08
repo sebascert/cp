@@ -7,16 +7,16 @@ string to_string(lll x) {
 	if (x == 0)
 		return "0";
 
-	int sign = x < 0 ? -1 : 1;
-	x *= sign;
+	bool neg = x < 0;
+	ulll y = -(ulll)x;
 
 	string s;
 	while (x > 0) {
-		s.pb(x % 10);
-		x /= 10;
+		s.pb('0' + y % 10);
+		y /= 10;
 	}
 
-	if (sign < 0)
+	if (neg)
 		s.pb('-');
 
 	reverse(all(s));
