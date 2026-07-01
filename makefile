@@ -15,7 +15,7 @@ objs := $(patsubst $(lib_dir)/%.cpp,$(build_dir)/%.o,$(sources))
 
 # compiler setup
 CXX := g++
-CXXSTD := c++17
+CXXSTD := c++20
 CXXFLAGS := -std=$(CXXSTD) -I$(lib_dir) -g
 CXXFLAGS += -Wall -Wextra -Wno-strict-aliasing
 
