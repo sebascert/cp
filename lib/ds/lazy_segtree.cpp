@@ -13,14 +13,14 @@ struct Segtree {
 	vector<Node> st;
 	Segtree(int n) : n(n), st(2 * n) {}
 	void push(int u, int l, int r) {
-		if (st[u].lazy) {
-			if (l < r) {
-				st[left(u)].lazy += st[u].lazy;
-				st[right(u)].lazy += st[u].lazy;
-			}
-			st[u].s += st[u].lazy * (r - l + 1);
-			st[u].lazy = 0;
+		if (st[u].lazy == 0)
+			return;
+		if (l < r) {
+			st[left(u)].lazy += st[u].lazy;
+			st[right(u)].lazy += st[u].lazy;
 		}
+		st[u].s += st[u].lazy * (r - l + 1);
+		st[u].lazy = 0;
 	}
 	void update(int u, int l, int r, int ll, int rr, lli val) {
 		push(u, l, r);

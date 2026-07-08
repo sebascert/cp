@@ -1,6 +1,6 @@
 #include "template.hpp"
 
-struct IterativeSegtree {
+struct Segtree {
 	struct Node {
 		lli s;
 		Node(lli s = 0) : s(s) {}
@@ -8,8 +8,8 @@ struct IterativeSegtree {
 	};
 	int n;
 	vector<Node> st;
-	IterativeSegtree(int n) : n(n), st(2 * n) {}
-	void build() { // copy original array to st [n,2*n)
+	Segtree(int n, vector<lli> a) : n(n), st(2 * n) {
+		copy(all(a), st.begin() + n);
 		ford(i, n, 0) st[i] = st[i << 1] + st[i << 1 | 1];
 	}
 	void update(int i, lli x) {
